@@ -7,10 +7,10 @@
 <%= link_to "Add New Song", new_song_path %>
 
 
-<h1>Our Customers</h1>
-<%= form_tag customers_upload_path, multipart: true do %>
+<h1>Songs</h1>
+<%= form_tag songs_upload_path, multipart: true do %>
   <%= file_field_tag :leads %>
-  <%= submit_tag "Import Leads" %>
+  <%= submit_tag "Import Songs" %>
 <% end %>
 <ul>
-<% @customers.each do |customer| %>
+<% @sngss.each do |song| %>
